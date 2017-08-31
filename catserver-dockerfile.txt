@@ -1,0 +1,5 @@
+FROM myubuntu:1
+
+COPY ./labdocker/target/server-runnable.jar /data/server-runnable.jar
+
+CMD java -cp /data/server-runnable.jar org.ds.java.Server /data/string.txt 2000
